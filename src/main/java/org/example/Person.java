@@ -1,9 +1,9 @@
 package org.example;
 
 public class Person {
-    private String name;
-    private int alter;
-    private char geschlecht;
+    private final String name;
+    private final int alter;
+    private final char geschlecht;
 
     public Person(String name, int alter, char geschlecht) {
         this.name = name;

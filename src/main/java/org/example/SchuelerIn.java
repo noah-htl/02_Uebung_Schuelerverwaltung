@@ -2,7 +2,7 @@ package org.example;
 
 public class SchuelerIn extends Person {
     private final int klasse;
-    private final int fehlstunden;
+    private int fehlstunden;
     private static int anzahl = 0;
     public SchuelerIn(String name, int alter, char geschlecht, int klasse) {
         super(name, alter, geschlecht);
@@ -13,11 +13,11 @@ public class SchuelerIn extends Person {
     }
 
     public int getKlasse() {
-        return klasse;
+        return this.klasse;
     }
 
     public int getFehlstunden() {
-        return fehlstunden;
+        return this.fehlstunden;
     }
 
     public static int getAnzahl() {
@@ -25,6 +25,6 @@ public class SchuelerIn extends Person {
     }
 
     public void addFehlstunden(int fehlstunden) {
-        fehlstunden += fehlstunden;
+        this.fehlstunden += fehlstunden;
     }
 }
